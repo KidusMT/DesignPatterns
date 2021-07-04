@@ -24,6 +24,7 @@ public class Menu extends MenuComponent {
 
     @Override
     public void printInfo() {
+        System.out.printf("=== %S ===\n", menuName.toUpperCase());
         for (MenuComponent component : components) {
             component.printInfo();
         }
