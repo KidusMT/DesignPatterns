@@ -1,21 +1,26 @@
 package main.iterator;
 
 import java.util.Iterator;
+import java.util.List;
 
 public class SongPlaylist {
 
     //    private BestOf70sSongs bestOf70sSongs;
 //    private BestOf80sSongs bestOf80sSongs;
 //    private BestOf90sSongs bestOf90sSongs;
-    private final SongIterator bestOf70sSongs;
-    private final SongIterator bestOf80sSongs;
-    private final SongIterator bestOf90sSongs;
+//    private final SongIterator bestOf70sSongs;
+//    private final SongIterator bestOf80sSongs;
+//    private final SongIterator bestOf90sSongs;
+
+    private Iterator<SongIterator> songIterators;
 
     //    public SongPlaylist(BestOf70sSongs songs70, BestOf80sSongs songs80, BestOf90sSongs songs90) {
-    public SongPlaylist(SongIterator songs70, SongIterator songs80, SongIterator songs90) {
-        bestOf70sSongs = songs70;
-        bestOf80sSongs = songs80;
-        bestOf90sSongs = songs90;
+//    public SongPlaylist(SongIterator songs70, SongIterator songs80, SongIterator songs90) {
+    public SongPlaylist(Iterator<SongIterator> newSongs) {
+//        bestOf70sSongs = songs70;
+//        bestOf80sSongs = songs80;
+//        bestOf90sSongs = songs90;
+        songIterators = newSongs;
     }
 
     // old way of writing without the design pattern
@@ -46,14 +51,18 @@ public class SongPlaylist {
 
     // clean code with the iterator design pattern
     public void showPlayListWithIterator() {
-        System.out.println("\n70s Best Hits");
-        printSongs(bestOf70sSongs.getSongs());
-
-        System.out.println("\n80s Best Hits");
-        printSongs(bestOf80sSongs.getSongs());
-
-        System.out.println("\n90s Best Hits");
-        printSongs(bestOf90sSongs.getSongs());
+        while(songIterators.hasNext()){
+            SongIterator songIterator = songIterators.next();
+            printSongs(songIterator.getSongs());
+        }
+//        System.out.println("\n70s Best Hits");
+//        printSongs(bestOf70sSongs.getSongs());
+//
+//        System.out.println("\n80s Best Hits");
+//        printSongs(bestOf80sSongs.getSongs());
+//
+//        System.out.println("\n90s Best Hits");
+//        printSongs(bestOf90sSongs.getSongs());
     }
 
     public void printSongs(Iterator<Song> iterator) {
