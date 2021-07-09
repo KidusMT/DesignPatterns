@@ -52,3 +52,15 @@ Design Patterns and Design Principles with their best practices and description
 
 ## Difference between
 - [Strategy vs State](https://www.javabrahman.com/design-patterns/strategy-design-pattern-versus-state-design-pattern-analysis/)
+
+- [Proxy vs Decorator vs Adapter vs Facade](https://stackoverflow.com/questions/350404/how-do-the-proxy-decorator-adapter-and-bridge-patterns-differ)
+
+- Decorator vs Adapter
+
+|Decorator DP|Composite DP|
+|----|----|
+|add new behaviour|part-whole hierarchy|
+|linear structure|tree structure|
+|one dimensional|two dimensional|
+|only one node|one or more nodes|
+
