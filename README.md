@@ -23,11 +23,11 @@ Design Patterns and Design Principles with their best practices and description
 - `Elements` of object 
 - in a `Structure`
 
-### [Composite](https://sourcemaking.com/design_patterns/composite): T-R-H-T
+### [Composite](https://sourcemaking.com/design_patterns/composite): C-T-P-T
 > Compose objects into tree structures to represent whole-part hierarchies. Composite lets clients treat individual objects and compositions of objects uniformly.
+- `Compose` 
 - `Tree` structure
-- `Represent` whole-part
-- `Hierarchies`
+- represent `Part-whole` hierarchies
 - `Treat` individual objects and compositions
 
 ### [Iterator](https://sourcemaking.com/design_patterns/iterator): E-A-S-E
@@ -63,4 +63,8 @@ Design Patterns and Design Principles with their best practices and description
 |linear structure|tree structure|
 |one dimensional|two dimensional|
 |only one node|one or more nodes|
+
+
+## wrapper patterns
+- [Beautiful put statement from SO](https://stackoverflow.com/a/53344777/6021740)
 
