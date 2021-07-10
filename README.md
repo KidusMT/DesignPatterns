@@ -66,5 +66,5 @@ Design Patterns and Design Principles with their best practices and description
 
 
 ## wrapper patterns
-- [Beautiful put statement from SO](https://stackoverflow.com/a/53344777/6021740)
+- [Beautifully put statement from SO](https://stackoverflow.com/a/53344777/6021740)
 
